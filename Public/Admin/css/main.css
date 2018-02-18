@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+body{color:red}
+.main{}
+.main ul li{list-style:none;margin:0;padding:0;}
+.main ul li em{font-style: normal;}
