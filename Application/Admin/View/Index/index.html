@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>THINK-BASE-{$meta_title}</title>
+<link rel="stylesheet" href="__STATIC__/layui/css/layui.css">
+<style>
+.layui-nav-tree .layui-nav-item {
+	border-bottom: 1px solid #fff;
+}
+</style>
+</head>
+<body class="layui-layout-body">
+	<div class="layui-layout layui-layout-admin">
+		<div class="layui-header">
+			<div class="layui-logo">THINK-BASE后台管理</div>
+			<!-- 头部区域（可配合layui已有的水平导航） -->
+			<ul class="layui-nav layui-layout-left">
+				<li class="layui-nav-item"><a href="">清除缓存</a></li>
+				<li class="layui-nav-item"><a href="">用户行为日志</a></li>
+				<li class="layui-nav-item"><a href="">用户列表</a></li>
+				<li class="layui-nav-item"><a href="javascript:;">第三方应用</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="">邮件管理</a>
+						</dd>
+						<dd>
+							<a href="">消息管理</a>
+						</dd>
+						<dd>
+							<a href="">授权管理</a>
+						</dd>
+					</dl></li>
+			</ul>
+			<ul class="layui-nav layui-layout-right">
+				<li class="layui-nav-item"><a href="javascript:;"> <img
+						src="http://t.cn/RCzsdCq" class="layui-nav-img"> 桃谷六仙
+				</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="">基本资料</a>
+						</dd>
+						<dd>
+							<a href="">安全设置</a>
+						</dd>
+					</dl></li>
+				<li class="layui-nav-item"><a href="{:U('Public/logout')}">退了</a></li>
+			</ul>
+		</div>
+
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scroll">
+				<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+				<ul class="layui-nav layui-nav-tree" lay-filter="test">
+					<li class="layui-nav-item "><a class="" href="javascript:;">用户管理</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="javascript:;">用户组</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">管理组</a>
+							</dd>
+
+						</dl></li>
+					<li class="layui-nav-item"><a href="javascript:;">菜单管理</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="javascript:;">前台菜单</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">后台菜单</a>
+							</dd>
+
+						</dl></li>
+					<!-- <li class="layui-nav-item"><a href="">云市场</a></li>
+        <li class="layui-nav-item"><a href="">发布商品</a></li> -->
+				</ul>
+			</div>
+		</div>
+
+		<div class="layui-body">
+			<!-- 内容主体区域 -->
+			<!-- <div style="padding: 15px;">内容主体区域</div> -->
+
+			<iframe src="{:U('Index/main')}" style="width: 100%; height: 100%;"
+				frameborder="0" id="appiframe-0" class="appiframe"></iframe>
+		</div>
+
+		<div class="layui-footer">
+			<!-- 底部固定区域 -->
+			© THINK-BASE - 版权所有，桃谷六仙
+		</div>
+	</div>
+	<script src="__STATIC__/layui/layui.js"></script>
+	<script>
+		//JavaScript代码区域
+		layui.use('element', function() {
+			var element = layui.element;
+		});
+	</script>
+</body>
+</html>

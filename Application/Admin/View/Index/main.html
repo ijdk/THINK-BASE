@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>后台主页</title>
+<CSS file="__PUBLIC__/Admin/css/main.css" />
+</head>
+<body>
+	<div class="main">
+		<ul class="message">
+			<h4 class="well">{:L('MESSAGES')}</h4>
+			<li>Think-Base正式发布，欢迎大家使用</li>
+			<li>开源免费软件，欢迎大家参与吐槽</li>
+			<li>作者桃谷六仙，这是本人的第一个基于tp的基础框架</li>
+		</ul>
+		<ul class='os'>
+			<h4 class="well">{:L('SYSTEM_INFORMATIONS')}</h4>
+			<volist name="server_info" id="vo">
+			<li><em>{$key}</em> <span>{$vo}</span></li>
+			</volist>
+		</ul>
+		<ul class='os'>
+			<h4 class="well">{:L('BASE-INFO')}</h4>
+			<li>Think-BASE框架基于上海顶想公司开发维护的MVC开源框架ThinkPHP,遵循Apache2开源协议发布</li>
+			<li>Think-BASE的前端页面基于bootstrap前端框架，Bootstrap是Twitter推出的一个用于前端开发的开源工具包,是一个CSS/HTML框架</li>
+			<li>Think-BASE后台模板的构建使用layui,Layui 是一款采用自身模块规范编写的情怀型前端UI框架,遵循原生HTML/CSS/JS的书写与组织形式</li>
+			<li>Think-BASE在吸取前辈们的开发经验基础上，经过架构优化，取长补短，使得基础架构更加合理，可扩展。</li>
+			<li>Think-BASE借鉴onethink和thinkcmf等优秀框架的基础，对前后台用户模型做了进一步完善。使网站会员和后台管理员分离</li>
+			<li>Think-BASE对一般网站的权限管理和网站前后台会员做了基础的构建，方便广大开发者使用</li>
+			<li>Think-BASE的前端更加通俗易懂，完全解决了一般后端开发人员对前端的烦躁和不熟悉</li>
+		</ul>
+	</div>
+</body>
+</html>
